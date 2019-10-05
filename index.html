@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name='viewport' content='width=device-width,initial-scale=1'/>
+	<meta content='true' name='HandheldFriendly'/>
+	<meta content='width' name='MobileOptimized'/>
+	<meta content='yes' name='apple-mobile-web-app-capable'/>
+	<title>Главная</title>
+	<meta name='description' content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<!--<link rel="stylesheet" href="css/canvas.css">-->
+	<link rel="stylesheet" type="text/css" href="css/style.css" />	
+</head> 
+<body class="loaded"  onload="start()" onresize="resize()" onorientationchange="resize()" onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" onmouseup="context.fillStyle='rgb(0,0,0)'">
+	<canvas id="starfield" ></canvas>
+	<div id="adsense">
+	<!--	<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> -->
+	</div>
+						
+<!-- BEGIN BODY -->
+
+	<div class="main-wrapper">
+
+	<!-- BEGIN HEADER -->
+
+		<header>	
+			<div class="header-wrapper">
+				<img src="img/logo.png" alt="Logo" class="logo">
+				<div class="phone">
+					<a href="#" class="phone__link">+38(066)123-45-67</a> <!-- tel:+380661234567 -->
+				</div>
+			</div>
+			<div class="wrapper"></div>
+		</header>
+		
+	<!-- HEADER EOF   -->	
+	<!-- BEGIN CONTENT -->
+
+		<main class="tab-wrap js-tab-wrap content-wrapper">		
+			<div class="nav-tab-list-wrapper left-side__wrapper">
+				<ul class="nav-tab-list tabs flex-center flex-space-between js-tabs">
+					<li class="nav-tab-list__item active">
+						<a href="#tab6" class="nav-tab-list__link">О студии</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab2" class="nav-tab-list__link nav-services">Услуги</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab3" class="nav-tab-list__link nav-work">Как мы работаем</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab4" class="nav-tab-list__link ">Портфолио</a>
+					</li>
+					<li class="nav-tab-list__item">
+						<a href="#tab5" class="nav-tab-list__link nav-contacts">Контакты</a>
+					</li>
+				</ul>
+			</div>
+			<div class="right-side__wrapper">
+				<div class="tab-cont about js-tab-cont " id="tab1">
+					<div class="tab-cont-wrapper">
+						<div class="tab-cont-item ">
+						NEW WEB STANDART
+						</div>
+					</div>
+				</div>
+				<div class="tab-cont about-studio js-tab-cont hide" id="tab6">
+					<div class="about-studio-wrapper">
+						<div class="about-studio__page about-studio__page-1">
+							<div class="about-studio__page-item">
+								<h3 class="about-studio__title about-studio__title-1">
+									О студии
+								</h3>
+								<span class="cover-text"></span>
+								<p class="about-studio__text about-studio__text-1">
+									Наша комания появилась а рынке недавною Но с самого начала деятельности, мы стремимся к тому, что бы давать своим заказчикам максимально полный комплекс услуг. Начиная свой путь с простой разроботкикрасивых сайтов, постепенно мы стали предлагать и другие сопутствующие сервисы.
+								</p>
+							</div>
+							<div class="about-studio__page-item about-studio__page-item-2">
+								<h3 class="about-studio__title about-studio__title-2">
+									Стандарты работы
+								</h3>
+								<span class="cover-text-2"></span>
+								<p class="about-studio__text about-studio__text-2">
+									В разработке мы придерживаемся международного стандаота Cobit 5 в части этапов внедрения информационных систем. Все этапы согласованны с заказчиком и подробно документируються.
+								</p>
+							</div>
+							<span class="about-studio__arrow about-studio__arrow-down"></span>
+						</div>
+					
+						<div class="about-studio__page about-studio__page-2 hide">
+							<div class="about-studio__page-item">
+								<h3 class="about-studio__title about-studio__title-3">
+									Философия
+								</h3>
+								<span class="cover-text"></span>
+								<span class="about-studio__line"></span>
+								<p class="about-studio__text about-studio__text-3">
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti, vel corporis dignissimos! Velit, dolorum ab ducimus tempore debitis consequatur beatae tempora suscipit, impedit nobis facilis! Voluptate voluptas ea odio repudiandae.
+								</p>
+							</div>
+							<div class="about-studio__page-item about-studio__page-item-4">
+								<h3 class="about-studio__title about-studio__title-4">
+									Стратегия
+								</h3>
+								<span class="cover-text-2"></span>
+								<span class="about-studio__line"></span>
+								<p class="about-studio__text about-studio__text-4">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic amet, repudiandae quisquam nesciunt tempore, in! Delectus nihil recusandae dolor porro qui voluptate, temporibus beatae saepe, optio non perferendis distinctio! Non.
+								</p>
+							</div>
+							<span class="about-studio__arrow about-studio__arrow-up"></span>
+						</div>
+					</div>
+				</div>
+				<div class="tab-cont servises js-tab-cont hide" id="tab2">
+					<div class="tab-cont-wrapper ">
+						<div class="tab-cont-item">
+							<ul class="servises-list">
+								<li class="servises-list__item servise-item_1">
+									<div class="servises-list__text">Одностраничные лендинги (сайт-визитка)</div>
+									<div class="servises-list__price"></div>
+								</li>
+								<li class="servises-list__item servise-item_2">
+									<div class="servises-list__text">Корпоративные сайты</div>
+									<div class="servises-list__price"></div>
+								</li>
+								<li class="servises-list__item servise-item_3">
+									<div class="servises-list__text">Имиджевые сайты</div>
+									<div class="servises-list__price"></div>
+								</li>
+								<li class="servises-list__item servise-item_4">
+									<div class="servises-list__text">Интернет-магазины</div>
+									<div class="servises-list__price"></div>
+								</li>
+								<li class="servises-list__item servise-item_5">
+									<div class="servises-list__text">Мобильные приложения</div>
+									<div class="servises-list__price"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tab-cont how-works js-tab-cont hide" id="tab3">
+					<div class="tab-cont-wrapper">
+						<div class="tab-cont-item">
+							<ul class="tab-cont-list">
+								<li class="tab-cont-list__item item-one">
+									<div class="tab-cont-list__digit digit-one">1</div>
+									<div class="tab-cont-list__text">Узнаем требования заказчика, выявляем задачи, которые стоят перед будущим сайтом</div>
+								</li>
+								<li class="tab-cont-list__item item-two">
+									<div class="tab-cont-list__digit digit-two">2</div>
+									<div class="tab-cont-list__text">Формируем ТЗ, на основании него окончательно просчитываем стоимость проекта</div>
+								</li>
+								<li class="tab-cont-list__item item-three">
+									<div class="tab-cont-list__digit digit-three">3</div>
+									<div class="tab-cont-list__text">Разрабатываем дизайн, согласовываем дизайн с заказчиком</div>
+								</li>
+								<li class="tab-cont-list__item item-four">
+									<div class="tab-cont-list__digit digit-four">4</div>
+									<div class="tab-cont-list__text">Реализовываем проект</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="tab-cont js-tab-cont hide" id="tab4">
+					<div class="tab-cont-wrapper porfolio-wrap portfolio-slide-1">
+						<div class="portfolio-slide portfolio-slide-1 active">
+							<ul class="portfolio-list portfolio-list-1">
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site1-320.png" alt="сайт" class="portfolio-img"></a></li>
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site2-320.png" alt="сайт" class="portfolio-img"></a></li>
+							</ul>
+							<ul class="portfolio-list portfolio-list-2">
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site3-320.jpg" alt="сайт" class="portfolio-img"></a></li>
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site4-320.jpg" alt="сайт" class="portfolio-img"></a></li>
+							</ul>
+						</div>
+						<div class="portfolio-slide portfolio-slide-2 hide">
+							<ul class="portfolio-list portfolio-list-1">
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site4-320.jpg" alt="сайт" class="portfolio-img"></a></li>
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site3-320.jpg" alt="сайт" class="portfolio-img"></a></li>
+							</ul>
+							<ul class="portfolio-list portfolio-list-2">
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site2-320.png" alt="сайт" class="portfolio-img"></a></li>
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site1-320.png" alt="сайт" class="portfolio-img"></a></li>
+							</ul>
+						</div>
+						<div class="portfolio-slide portfolio-slide-3 hide">
+							<ul class="portfolio-list portfolio-list-1">
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site2-320.png" alt="сайт" class="portfolio-img"></a></li>
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site4-320.jpg" alt="сайт" class="portfolio-img"></a></li>
+							</ul>
+							<ul class="portfolio-list portfolio-list-2">
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site1-320.png" alt="сайт" class="portfolio-img"></a></li>
+								<li class="portfolio-item"><a href="#" class="portfolio-link"><img src="img/site3-320.jpg" alt="сайт" class="portfolio-img"></a></li>
+							</ul>
+						</div>
+						<span class="portfolio-arrow portfolio-next"></span>
+						<span class="portfolio-arrow portfolio-prev"></span>
+					</div>
+				</div>
+				<div class="tab-cont contacts js-tab-cont hide" id="tab5">
+					<div class="tab-cont-wrapper">
+						<div class="tab-cont-item">
+							<div class="wrapper-form">
+								<form action="" method="post" class="form">
+									<div class="form-wrapper">
+										<div class="input-wrapper">
+											<input type="text" placeholder="Имя">
+										</div>
+										<div class="input-wrapper">
+											<input type="text" placeholder="Телефон">
+										</div>
+										<div class="input-wrapper">
+											<input type="text" placeholder="E-mail">
+										</div>
+										<div class="submit-btn">
+											<input type="submit" value="Отправить">
+										</div>
+									</div>
+								</form>
+								<div class="cover-input"></div>
+							</div>
+							<div class="cover-info">
+								<div class="info-wrapper">
+									<ul class="info-list">
+										<li class="info-list__item">
+											<a href="tel:+380001234567" class="info-list__link">+38(000)123-45-67</a>
+										</li>
+										<li class="info-list__item">
+											<a href="tel:+380001234567" class="info-list__link">+38(000)123-45-67</a>
+										</li>
+										<li class="info-list__item">
+											<a href="mailto:info@gmail.com" class="info-list__link">info@gmail.com</a>
+										</li>
+									</ul>
+									
+									<ul class="info-list adres">
+										<li class="info-list__item">Украина, Киев</li>
+										<li class="info-list__item">ул.Соломенская,3</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>	
+				
+	<!-- CONTENT EOF   -->
+
+	<!-- BEGIN FOOTER -->	
+		
+		<footer class="active">
+			<p class="empty"></p>
+			<form action="" class="form-footer hide">
+				<!-- <button class="form-btn"><img src="img/Arrow.png" alt="стрелка" class="btm-img"></button> -->
+				<span class="form-text"><img src="img/Arrow.png" alt="стрелка" class="btm-img"></span>
+				<div class="form-wrap-input">
+					<!-- <span class="message">Только цыфры</span> -->
+					<input type="telephone" id="btn" class="form-input" placeholder="Телефон" required="required">
+					<button class="form-btn">Перезвонить мне</button>
+					<!-- <label for="btn" class="form-text">Перезвонить мне</label> -->
+				</div>
+				<div class="form-wrap-radio">
+					<input type="radio" id="site" class="radio-btn radio-site checked" checked>
+					<label for="site" class="label-radio">Нужен сайт</label>
+					<input type="radio" id="consultation" class="radio-btn radio-consultation">
+					<label for="consultation" class="label-radio">Консультация</label>
+				</div>
+				<div class="form-alert hide">
+					<h3 class="form-alert-title">
+						Заявка принята
+					</h3>
+					<p class="form-alert-text">
+						Ожидайте звонка
+					</p>
+				</div>
+			</form>
+			<p class="order-text">Быстрый заказ</p>
+		</footer>
+		
+	<!-- FOOTER EOF   -->
+	</div>		
+	<div class="icon-load"></div>		
+
+<!-- BODY EOF   -->
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-migrate-3.1.0.min.js" ></script>
+	<script src="js/custom.js" ></script>
+	<script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
+	<script type="text/javascript"> var _uacct='UA-241365-1'; urchinTracker(); </script>
+	<script type="text/javascript" src="js/canvas.js"></script>
+</body>
+</html>
+
+
+
+

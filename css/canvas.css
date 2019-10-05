@@ -1,0 +1,24 @@
+/*.body {
+	position: relative;
+	margin:0;
+	padding:0;
+	background-color:#000000;
+	font-size:0;
+	overflow:hidden;
+}*/
+
+canvas { 
+	position: absolute;
+	background-color:#000000;
+	overflow:hidden;
+}
+#adsense {
+	position:absolute;
+	background-color:transparent;
+	display:none;
+	height: 0;
+}
+#starfield {
+	background-color:#000000;
+}
+

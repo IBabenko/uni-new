@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Gardens';
+    src: url('../fonts/Gardens-regular/GardensC.eot');
+    src: url('../fonts/Gardens-regular/GardensC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gardens-regular/GardensC.woff2') format('woff2'),
+        url('../fonts/Gardens-regular/GardensC.woff') format('woff'),
+        url('../fonts/Gardens-regular/GardensC.ttf') format('truetype'),
+        url('../fonts/Gardens-regular/GardensC.svg#GardensC') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dots';
+    src: url('../fonts/DSDots-medium/DSDots-Medium.eot');
+    src: url('../fonts/DSDots-medium/DSDots-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DSDots-medium/DSDots-Medium.woff2') format('woff2'),
+        url('../fonts/DSDots-medium/DSDots-Medium.woff') format('woff'),
+        url('../fonts/DSDots-medium/DSDots-Medium.ttf') format('truetype'),
+        url('../fonts/DSDots-medium/DSDots-Medium.svg#DSDots-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Homestead';
+    src: url('../fonts/Homestead-regular/Homestead-Regular.eot');
+    src: url('../fonts/Homestead-regular/Homestead-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Homestead-regular/Homestead-Regular.woff2') format('woff2'),
+        url('../fonts/Homestead-regular/Homestead-Regular.woff') format('woff'),
+        url('../fonts/Homestead-regular/Homestead-Regular.ttf') format('truetype'),
+        url('../fonts/Homestead-regular/Homestead-Regular.svg#Homestead-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
