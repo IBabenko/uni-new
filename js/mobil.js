@@ -18,9 +18,9 @@ $(window).resize();
 
 	var id = "#main-screen";
 	var sections = $(".section");
-	var serveceWrapSet = $(".services-wrap").children().filter(".service-wrap");
+	var serviceWrapSet = $(".services-wrap").children().filter(".service-wrap");
 	function pauseCloseServices(){
-		$(serveceWrapSet).addClass("hide");
+		$(serviceWrapSet).addClass("hide");
 	}
 	
 	var linkWindows = $('.portfolio__about');
@@ -54,7 +54,7 @@ $(window).resize();
 		setTimeout (pausePage,setTime);
 
 		function pausePage (){
-			$(serveceWrapSet).removeClass("hide");
+			$(serviceWrapSet).removeClass("hide");
 			$(sections).addClass('hide').removeClass('anim').removeClass('anim2').removeClass('anim3');
 			$(id).removeClass('hide').addClass('anim');
 			$('.about-finish').css({backgroundColor: ''});
@@ -79,8 +79,10 @@ $(window).resize();
 				$(".form-btn").text("Заказать имидживый сайт");
 			} else if ($(this).text() == "Интернет-магазины"){
 				$(".form-btn").text("Заказать интернет-магазин");
-			} else if ($(this).text() == "Мобильные приложения"){
+			} else if ($(this).text() == "Мобильные приложения") {
 				$(".form-btn").text("Заказать приложение");
+			}	else if ($(this).text() == "Сопровождение и поддержка"){
+				$(".form-btn").text("Заказать сопровождение и поддержку");
 			}
 			$('.section-form').removeClass('hide').addClass('anim');
 		setTimeout (pauseOpenForm,500);
@@ -126,9 +128,6 @@ $(window).resize();
 		$('.contacts').addClass('hide');
 		setTimeout (pauseCloseForm,500);
 	});
-
-
-
 
 });
 

@@ -130,7 +130,6 @@ display: flex;
   overflow: hidden;
 }
 
-
 /*
 ================================================================================
 |                                     HEADER                                   |
@@ -156,6 +155,13 @@ display: flex;
   font-size: 15px;
   margin: 28px;
 }
+.phone a, .phone a:hover {
+  text-decoration: none;
+  color: white;
+}
+.phone__link {
+  margin-top: 5rem;
+}
 .back {
   position: absolute;
   width: 100%;
@@ -163,27 +169,11 @@ display: flex;
   opacity: .4;
 }
 /*
-
 ================================================================================
 |                                     CONTENT                                 |
 ================================================================================
 */
-.content-wrapper {
- /* display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-      justify-content: space-between;
-  height: 100%;*/
-}
 .left-side__wrapper {
-  /*width: 240px;
-  height: 100%;
-  padding: 55px 0 0 0;*/
-  /*background-color: #000;*/
   z-index: 30;
 }
 .right-side__wrapper {
@@ -236,8 +226,6 @@ display: flex;
 |                                     CONTENT                                 |
 ================================================================================
 */
-
-
 .about .tab-cont-item { 
   opacity: 0; 
   font-family: 'Dots'; 
@@ -585,10 +573,6 @@ display: flex;
   color: #fff; 
   font-size: 18px; 
 }
-/*.servises-list {
-  padding: 65px 0 30px 180px;
-  width: 820px;
-}*/
 .servises-list__text { 
   padding: 0 170px 7px 0; 
   background-color: #000;
@@ -661,18 +645,33 @@ display: flex;
   from { top: -25px; }
   to { top: 20%; }
 }
+/* ---------------Price----------------- */
 .servises-list__price { 
   position: relative;
   text-align: right; 
   padding: 60px 0 0 0;
   font-size: 16px; 
 }
-.servises-list__price:after { 
-  content: "От 100 USD";
+.servises-list__price:after {
   position: absolute;
   right: -5%;
   z-index: 2;
-  }
+}
+.servises-list__price1:after {
+  content: "От 14 дней";
+}
+.servises-list__price2:after {
+  content: "От 20 дней";
+}
+.servises-list__price3:after {
+  content: "От 30 дней";
+}
+.servises-list__price4:after {
+  content: "От 60 дней";
+}
+.servises-list__price5:after {
+  content: "От 90 дней";
+}
 .servises.anim .servises-list__price:after { 
   top: 30%;
   -webkit-animation: price-to-bottom .25s linear .75s;
@@ -708,6 +707,8 @@ display: flex;
   height: 28px;
   z-index: 3;
 }
+/* End Price */
+
 input[type="text"] { 
   background: #000; 
   border: none; 
@@ -734,8 +735,7 @@ input[type="text"] {
   -webkit-box-direction: normal; 
   -webkit-flex-direction: column; 
   -ms-flex-direction: column; 
-  flex-direction: column; 
-  /*margin-bottom: 120px; */
+  flex-direction: column;
 }
 .form-wrapper:before {
   content: "";
@@ -940,16 +940,12 @@ input[type="text"] {
 .info-list__item { 
   padding-bottom: 10px; 
 }
-.info-list.adres {
-/*  padding-left: 15%; */
-}
 .about-studio-wrapper {
   position: relative;
 }
 .about-studio__page-item {
   position: relative;
   height: 240px;
-  /*background-color: #000;*/
 }
 .about-studio__page-item-2,
 .about-studio__page-item-4 {
@@ -1399,14 +1395,7 @@ input[type="text"] {
   from { top: -60px; }
   to { top: 85%; }
 }
-/*@-webkit-keyframes portfolio-arrows-down {
-  from { top: -60px; }
-  to { top: 445px; }
-}
-@keyframes portfolio-arrows-down {
-  from { top: -60px; }
-  to { top: 445px; }
-}*/
+
 @-webkit-keyframes portfolio-arrows-rotate {
   from { transform: rotate(0deg); }
   to { transform: rotate(-135deg); }
@@ -1431,22 +1420,7 @@ input[type="text"] {
   from { left: calc(50% - 10px); }
   to { left: calc(80% - 20px); }
 }
-/*@-webkit-keyframes portfolio-prev {
-  from { left: 543px; }
-  to { left: 300px; }
-}
-@keyframes portfolio-prev {
-  from { left: 543px; }
-  to { left: 300px; }
-}
-@-webkit-keyframes portfolio-next {
-  from { left: 543px; }
-  to { left: 790px; }
-}
-@keyframes portfolio-next {
-  from { left: 543px; }
-  to { left: 790px; }
-}*/
+
 .portfolio-arrows {
   height: 50px;
 }
@@ -1754,16 +1728,7 @@ footer.anim4 .form-wrap-input {
   width: 100%;
   margin-bottom: 20px;
 }
-/*.message {
-  position: absolute;
-  top: 60px;
- clip-path: polygon(0 54%, 100% 55%, 100% 25%, 82% 25%, 83% 0, 70% 25%, 0 25%);
-  width: 200px;
-  height: 60px;
-  background-color: gray;
-  border-radius: 2px;
-  color: #fff;
-}*/
+
 .form-btn { 
   font-family: "Gardens", sans-serif; 
   margin-left: 245px;
@@ -1902,16 +1867,13 @@ footer.anim4 .form-wrap-radio {
 .checked {
   background-color: #fff;
 }
-/*.radio-btn:hover { 
-  background-color: gray;
-}*/
+
 .label-radio {
   text-transform: uppercase;
   margin-right: 107px;
 }
 
 /*////////////////////////////////////////////////////////*/
-
 
 @media screen and (max-width: 1600px){
     .portfolio-item {
@@ -1942,28 +1904,24 @@ footer.anim4 .form-wrap-radio {
   }
 }
 
+@media screen and (max-height: 800px){
+  .portfolio-item { width: 300px; }
+}
+@media screen and (max-height: 600px){
+  .portfolio-item { width: 200px; }
+}
+
 @media screen and (max-width: 1056px){ 
   @-webkit-keyframes price-to-bottom { from { top: 17%; } to { top: 50%; } }
   @keyframes price-to-bottom { from { top: 17%; } to { top: 50%; } }
-/*  .servises-list { width: 600px; padding: 65px 0 30px 100px; }*/
   .servises-list__text { padding: 0 130px 7px 0; }
   .servises-list__price { padding-top: 40px; font-size: 14px; }
   .price-to-bottom:after { top: 45%; }
-/*  .tab-cont-list { padding: 80px 0 0 70px; }*/
   .tab-cont-list__text { font-size: 16px; }
   .tab-cont-list__item:nth-child(2), 
   .tab-cont-list__item:nth-child(4) { margin-left: 140px; }
   .tab-cont-list__item { width: 500px; }
-/*  .contacts { width: 45%; margin: 57px 0 0 200px; }*/
-/*  .portfolio-wrap { padding: 20px 0  0 80px; }*/
-  .portfolio-item { width: 280px; /*margin: 0 60px 30px 20px;*/ }
   .portfolio-arrow { height: 40px; width: 40px; }
-  /*@-webkit-keyframes portfolio-arrows-down { from { top: -60px; } to { top: 430px; } }
-  @keyframes portfolio-arrows-down { from { top: -60px; } to { top: 430px; } }
-  @-webkit-keyframes portfolio-prev { from { left: 400px; } to { left: 200px; } }
-  @keyframes portfolio-prev { from { left: 400px; } to { left: 200px; } }
-  @-webkit-keyframes portfolio-next { from { left: 400px; } to { left: 600px; } }
-  @keyframes portfolio-next { from { left: 400px; } to { left: 600px; } }*/
   .about-studio.anim .about-studio__text-1, .about-studio.anim .about-studio__text-3  { left: 30%; }
   .about-studio__title:after { right: -44.5%; }
   .about-studio.anim .about-studio__text-2, .about-studio.anim .about-studio__text-4 { left: 44.5%; }
@@ -1975,30 +1933,20 @@ footer.anim4 .form-wrap-radio {
   }
 }
 
-@media screen and (max-width: 768px){
 
-}
 
 @media screen and (max-width: 768px){
   .about .tab-cont-item { margin-top: 200px; }
-/*  .servises-list { width: 500px; padding: 95px 0 0 80px; }*/
   .servises-list__text { padding: 0 30px 7px 0; font-size: 16px; }
-/*  .tab-cont-list { width: 400px; padding: 100px 0 0 60px; }*/
   .tab-cont-list__digit:after { right: -20px; } 
   .tab-cont-list__digit { font-size: 60px; }
   .tab-cont-list__text { font-size: 14px; padding-left: 30px; padding-right: 30px;}
   .tab-cont-list__item:nth-child(2), 
   .tab-cont-list__item:nth-child(4) { margin-left: 100px; }
   .tab-cont-list__item { width: 500px; }
-/*  .contacts { width: 60%; margin: 65px 0 0 100px; }*/
   .form-wrapper {margin-bottom: 80px;}
-/*  .portfolio-wrap { padding: 20px 0  0 20px; }*/
-  .portfolio-item { width: 220px; /*margin: 0 40px 20px 10px;*/ }
+  .portfolio-item { width: 220px; }
   .portfolio-arrow { height: 30px; width: 30px; }
-  /*@-webkit-keyframes portfolio-prev { from { left: 543px; } to { left: 300px; } }
-  @keyframes portfolio-prev { from { left: 265px; } to { left: 100px; } }
-  @-webkit-keyframes portfolio-next { from { left: 543px; } to { left: 756px; } }
-  @keyframes portfolio-next { from { left: 265px; } to { left: 420px; } }*/
   .about-studio__title { font-size: 20px; }
   .about-studio.anim .about-studio__text { font-size: 14px; line-height: 22px }
   .about-studio-wrapper { padding: 60px 10px  90px 10px }
