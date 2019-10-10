@@ -1,25 +1,44 @@
-﻿
+﻿$()
 
 $('#form').on('submit', function(e){
-	e.preventDefault();
-	let fd = new FormData( this );
-	$.ajax({
-		url: 'ContactMailer.php',
-		type: 'POST',
-		contentType: false,
-		processData: false,
-		data: fd,
-		success: function(msg){
-			if(msg == 1) {
-				alert('Отправлено');
-			} else {
-				alert('Ошибка')
-			}
+	/*e.preventDefault();*/
+	var errors = false;
+	$('#message-contacts').html(''); //Чистим сообщение при нажатии на кнопку
+
+	$(this).find('input, textarea').each(function(){ //Проверка заполнения всех полей
+		if( $.trim( $(this).val() ) == '' ) {
+			errors = true;
+			$('#message-contacts').html('Нужно заполнить все поля!');
 		}
 	});
+
+	if( !errors ){
+		let title = "Сообщение формы [Контакты]";
+
+		/*let data ="&title=" + title + "&name=" + name + "&phone=" + phone + "&mail=" + mail;*/
+		let data = $('#form').serialize();
+		$.ajax({
+			url: 'handler.php',
+			type: 'POST',
+			data: data +'&title=' + title,
+			beforeSend: function(){
+				$('#message-contacts').html('Отправляю...');
+			},
+			success: function(res){
+				if( res == 1 ){
+					$('#form')[0].reset();
+					$('#message-contacts').html('Письмо отправлено! В ближайшее время мы свяжемся с Вами.');
+				}else{
+					$('#message-contacts').html('Ошибка отправки. Свяжитесь с нами по телефону или e-mail.');
+				}
+			},
+			error: function(){
+				$('#message-contact').html('Ошибка отправки. Свяжитесь с нами по телефону или e-mail.');
+			}
+		});
+	}
+	return false;
 });
-
-
 
 $(window).on('load', function () {
 
@@ -203,25 +222,46 @@ $('.order-text').on('click', function(){
 			}
 	}
 // Нажатие на кнопку "Перезвонить мне"
-var formInput =  $('.form-input');
+let formInput =  $('.form-input');
 
 $('.form-btn').on('click', function(e){
 	e.preventDefault();
-
+	$('#message-fast').html('');
+	let error_fast = false;
 	if( formInput.val() == '' ){
 		$(formInput).attr("placeholder", "Заполните пожалуйста поле").blur();
 		formInput.css('text-align', 'right');
+		error_fast = true;
 	} else if ( /^[0-9-.+()*/ ]+$/.test($('.form-input').val()) ) {
 			checkAct = false;
-			$('footer').addClass('anim2');
-			$('.form-alert').removeClass('hide');
-			formInput.val('');
-			formInput.css('text-align', 'right');
-		} else {
-				formInput.val('');
-				$(formInput).attr("placeholder", "Введите только цифры").blur();
-				formInput.css('text-align', 'right');
+	} else {
+		formInput.val('');
+		$(formInput).attr("placeholder", "Введите только цифры").blur();
+		formInput.css('text-align', 'right');
+		error_fast = true;
+	}
+	if( !error_fast ){
+		let title = "Сообщение формы [Быстрый заказ]";
+		let data = $('#form-footer').serialize();
+		$.ajax({
+			url: 'handler.php',
+			type: 'POST',
+			data: data +'&title=' + title,
+			success: function(res){
+				if( res == 1 ){
+					$('footer').addClass('anim2');
+					$('.form-alert').removeClass('hide');
+					formInput.val('');
+					formInput.css('text-align', 'right');
+				}else{
+					$('#message-fast').html('Ошибка отправки. Свяжитесь с нами по телефону или e-mail.');
+				}
+			},
+			error: function(){
+				$('#message-fast').html('Ошибка отправки. Свяжитесь с нами по телефону или e-mail.');
 			}
+		});
+	}
 });
 
 // Нажатие на стрелку в быстром заказе

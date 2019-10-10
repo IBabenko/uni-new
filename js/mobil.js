@@ -68,8 +68,8 @@ $(window).resize();
 		$('.section-form').addClass('hide').removeClass('anim3');
 		$("#tab6").addClass("hide").removeClass("anim3");
 	}
-	var serviceForm = $(".service-text");
-	for(var i = 0; i < serviceForm.length; i++){
+	let serviceForm = $(".service-text");
+	for(let i = 0; i < serviceForm.length; i++){
 		$(serviceForm[i]).on('click', function(){
 			if($(this).text() == "Одностраничные лендинги (сайт-визитка)"){
 				$(".form-btn").text("Заказать лендинг");
@@ -88,6 +88,31 @@ $(window).resize();
 		setTimeout (pauseOpenForm,500);
 		});
 	}
+
+	$('.form-btn').on('click', function(){
+		let title = "Сообщение мобильной формы";
+		let service = $('.form-btn').html();
+		let data = $('.form').serialize();
+		$.ajax({
+			url: 'handler.php',
+			type: 'POST',
+			data: data +'&title=' + title +'&service=' + service,
+			beforeSend: function(){
+				$('.form-btn').html('Отправляю...');
+			},
+			success: function(res){
+				if( res == 1 ){
+					$('.form-btn')[0].reset();
+					$('.form-btn').html('Письмо отправлено!');
+				}else{
+					$('.form-btn').html('Ошибка отправки');
+				}
+			},
+			error: function(){
+				$('.form-btn').html('Ошибка отправки');
+			}
+		});
+	})
 
 	function closeAbout(){
 		$('#tab4').removeClass('anim2').addClass('anim3');

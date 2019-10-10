@@ -188,11 +188,11 @@ display: flex;
   margin: 30px 0 20px 30px;
 }
 .presentation {
-  margin: 40px 0 20px 30px;
+  margin: 60px 0 20px 30px;
 }
 .presentation img {
-  margin-left: 1rem;
-  height: 3rem;
+  margin-left: 1.5rem;
+  height: 2.5rem;
   width: auto;
 }
 .presentation a, .presentation a:hover {
@@ -274,7 +274,8 @@ display: flex;
   position: relative; 
 }
 .nav-tab-list-wrapper { 
-  position: relative; 
+  position: relative;
+
 }
 .disabled { 
   pointer-events: none;
@@ -794,6 +795,10 @@ input[type="text"] {
 @keyframes cover-btn {
   from {left: 0;}
   to {left: 99%;}
+}
+
+.message {
+  margin: 20px 30px 0 0;
 }
 .submit-btn:after { 
   content: ""; 
