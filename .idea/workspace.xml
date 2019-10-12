@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5bf798b0-d8ad-4605-9fd9-c72445e3e3ef" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/policy.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/mobil.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mobil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index1.html" beforeDir="false" afterPath="$PROJECT_DIR$/index1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mobil.html" beforeDir="false" afterPath="$PROJECT_DIR$/mobil.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/presentation.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570271854093</updated>
       <workItem from="1570271855275" duration="44138000" />
-      <workItem from="1570601767644" duration="51552000" />
+      <workItem from="1570601767644" duration="56534000" />
     </task>
     <task id="LOCAL-00001" summary="index нужен для переадресации на index1 и mobile. Верстка перенесена на bs4. Довавлена пункт меню - презентация">
       <created>1570601922881</created>
@@ -125,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570726113685</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Финал - увеличен блок телефонов в мобильной версии до 50%">
+      <created>1570728666827</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1570728666827</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +159,8 @@
     <MESSAGE value="Финал кроме форм" />
     <MESSAGE value="Финал" />
     <MESSAGE value="Финал - поменял телефон" />
-    <option name="LAST_COMMIT_MESSAGE" value="Финал - поменял телефон" />
+    <MESSAGE value="Финал - увеличен блок телефонов в мобильной версии до 50%" />
+    <option name="LAST_COMMIT_MESSAGE" value="Финал - увеличен блок телефонов в мобильной версии до 50%" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
