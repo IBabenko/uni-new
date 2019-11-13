@@ -151,11 +151,13 @@ display: flex;
 .logo {
   width: 270px;
 }
-.phone {
+.present {
+}
+.phone, .present {
   font-size: 15px;
   margin: 28px;
 }
-.phone a, .phone a:hover {
+.phone a, .phone a:hover, .present a:hover {
   text-decoration: none;
   color: white;
 }

@@ -119,8 +119,17 @@ li {
 	right:20px;
 	top: 60px;
 }
+.present-mob {
+	position: fixed;
+	right:20px;
+	top: 120px;
+}
+
 .phone-icon {
 	width: 25px;
+}
+.movie-icon {
+	width: 30px;
 }
 
 .menu-list {

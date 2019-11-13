@@ -26,6 +26,7 @@ $('#form').on('submit', function(e){
 			},
 			success: function(res){
 				if( res == 1 ){
+					fbq('track', 'Lead');
 					$('#form')[0].reset();
 					$('#message-contacts').html('Письмо отправлено! В ближайшее время мы свяжемся с Вами.');
 				}else{
