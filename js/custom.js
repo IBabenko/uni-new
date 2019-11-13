@@ -250,6 +250,7 @@ $('.form-btn').on('click', function(e){
 			data: data +'&title=' + title,
 			success: function(res){
 				if( res == 1 ){
+					fbq('track', 'Lead');
 					$('footer').addClass('anim2');
 					$('.form-alert').removeClass('hide');
 					formInput.val('');
